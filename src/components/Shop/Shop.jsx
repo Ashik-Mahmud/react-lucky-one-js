@@ -9,7 +9,7 @@ const Shop = ({ products }) => {
   const [error, setError] = useState("");
   const [cartItems, setCartItems] = useState([]);
   const [loading, setLoading] = useState(false);
-
+  const [celebrate, setCelebrate] = useState(false);
   useEffect(() => {
     setSavedItem(UseStorage());
   }, []);
@@ -33,6 +33,7 @@ const Shop = ({ products }) => {
     setTimeout(() => {
       setCartItems([cartItem]);
       setLoading(false);
+      setCelebrate(true);
     }, 5000);
   };
 
@@ -66,7 +67,11 @@ const Shop = ({ products }) => {
                   <div className="cart-container">
                     {!loading ? (
                       cartItems.map((item) => (
-                        <CartItem key={item.id} item={item} />
+                        <CartItem
+                          key={item.id}
+                          item={item}
+                          celebrate={celebrate}
+                        />
                       ))
                     ) : (
                       <div className="waiting">

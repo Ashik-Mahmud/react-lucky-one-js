@@ -42,3 +42,11 @@
   font-size: 1.2rem;
   margin-right: 1rem;
 }
+img.active {
+  position: absolute;
+  z-index: -1;
+  display: none;
+}
+img.active.block {
+  display: block;
+}
