@@ -15,11 +15,24 @@
   cursor: pointer;
   margin-bottom: 1rem;
 }
-.question-content summery {
+.question-content summary {
   padding: 0.3rem 0rem;
   font-weight: bold;
 }
 .question-content details p {
   background-color: #fff;
   padding: 1rem;
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+.question-content table {
+  width: 100%;
+  text-align: left;
+  background-color: #fff;
+  padding: 1rem;
+}
+.question-content table th,
+.question-content table td {
+  padding: 0.3rem;
+  border-bottom: 1px solid #f3f3f3;
 }
