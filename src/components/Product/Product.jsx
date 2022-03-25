@@ -2,7 +2,7 @@ import React from "react";
 import { MdOutlineAddShoppingCart } from "react-icons/md";
 import "./Product.css";
 const Product = ({ product }) => {
-  const { imageUrl, price, name, category, id } = product;
+  const { imageUrl, price, name, category } = product;
   return (
     <div className="product">
       <div className="image">
