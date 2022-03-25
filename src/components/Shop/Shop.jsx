@@ -36,6 +36,14 @@ const Shop = ({ products }) => {
     }, 5000);
   };
 
+  /* handle Clear All function here  */
+  const handleClearAll = () => {
+    if (window.confirm("Do you want to clear all carts?")) {
+      setSavedItem([]);
+      localStorage.removeItem("carts");
+    }
+  };
+
   return (
     <>
       <section id="shop">
@@ -73,7 +81,9 @@ const Shop = ({ products }) => {
                     <button className="draw-cart" onClick={handlePickBestOne}>
                       Pick Best One
                     </button>
-                    <button className="clear-cart">Clear Cart</button>
+                    <button onClick={handleClearAll} className="clear-cart">
+                      Clear Cart
+                    </button>
                   </div>
                 </>
               ) : (
