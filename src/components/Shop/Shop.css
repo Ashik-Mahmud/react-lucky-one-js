@@ -19,6 +19,31 @@
 }
 #shop .shop-dashboard {
   background-color: #f7f7f7;
-  padding: 1rem;
+  padding: 1.5rem;
+  position: sticky;
+  top: 1%;
+}
+#shop .cart-container {
   position: relative;
+  margin-top: 1.5rem;
+}
+#shop .shop-dashboard .carts-btn {
+  position: relative;
+  margin-top: 2rem;
+}
+.shop-dashboard .carts-btn button {
+  width: 100%;
+  position: relative;
+  padding: 0.5rem;
+  background-color: var(--primary-color);
+  color: #fff;
+  border: none;
+  outline: none;
+  font-family: "poppins", sans-serif;
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.shop-dashboard .carts-btn button:last-child {
+  background: var(--primary-color-alt);
 }
