@@ -3,12 +3,13 @@ import { MdOutlineAddShoppingCart } from "react-icons/md";
 import { UseStorage } from "../Storage/Storage";
 import { handleCartStorage } from "./HandleStorage";
 import "./Product.css";
-const Product = ({ product, setSavedItem, setError }) => {
+const Product = ({ product, setSavedItem, setError, setCelebrate }) => {
   const { imageUrl, price, name, category, id } = product;
 
   const handleCartItem = (id) => {
     handleCartStorage(id, setError);
     setSavedItem(UseStorage());
+    setCelebrate(false);
   };
 
   return (

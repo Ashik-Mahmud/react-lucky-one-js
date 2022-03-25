@@ -65,6 +65,7 @@ const Shop = ({ products }) => {
                   product={product}
                   setSavedItem={setSavedItem}
                   setError={setError}
+                  setCelebrate={setCelebrate}
                 />
               ))}
             </div>
