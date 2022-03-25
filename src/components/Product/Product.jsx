@@ -11,9 +11,9 @@ const Product = () => {
         />
       </div>
       <div className="info">
-        <h3>Name goes here</h3>
+        <h4>Name goes here</h4>
         <div className="inner-info">
-          <span>$145424</span>
+          <span className="colorize bold">$145424</span>
           <span>Category</span>
         </div>
         <button>

@@ -41,3 +41,6 @@ img {
 .colorize {
   color: var(--primary-color);
 }
+.bold {
+  font-weight: bold;
+}
