@@ -5,3 +5,7 @@ This is simple RealState application using react js. If you have a any query abo
 ### Live App link
 
 # <>
+
+![imageScreenshot](./preview.png)
+
+> Thanks for reach out me on Github
