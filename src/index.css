@@ -3,8 +3,9 @@
 /* variables  */
 
 :root {
-  --primary-color: #fe33;
-  --secondary-color: #2323;
+  --primary-color: #65c45f;
+  --primary-color-alt: #e5537d;
+  --secondary-color: #009cd1;
   --text-color: #222;
 }
 
@@ -36,4 +37,7 @@ img {
 .container {
   max-width: min(100% - 2rem, 1250px);
   margin-inline: auto;
+}
+.colorize {
+  color: var(--primary-color);
 }
