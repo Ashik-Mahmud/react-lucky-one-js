@@ -30,3 +30,10 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+/* custom classes  */
+
+.container {
+  max-width: min(100% - 2rem, 1250px);
+  margin-inline: auto;
+}
