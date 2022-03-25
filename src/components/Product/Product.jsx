@@ -1,8 +1,16 @@
 import React from "react";
 import { MdOutlineAddShoppingCart } from "react-icons/md";
+import { UseStorage } from "../Storage/Storage";
+import { handleCartStorage } from "./HandleStorage";
 import "./Product.css";
-const Product = ({ product }) => {
-  const { imageUrl, price, name, category } = product;
+const Product = ({ product, setSavedItem, setError }) => {
+  const { imageUrl, price, name, category, id } = product;
+
+  const handleCartItem = (id) => {
+    handleCartStorage(id, setError);
+    setSavedItem(UseStorage());
+  };
+
   return (
     <div className="product">
       <div className="image">
@@ -14,7 +22,7 @@ const Product = ({ product }) => {
           <span className="colorize bold">${price}</span>
           <span>{category}</span>
         </div>
-        <button>
+        <button onClick={() => handleCartItem(id)}>
           Add to Cart <MdOutlineAddShoppingCart />
         </button>
       </div>
