@@ -44,6 +44,14 @@ const Shop = ({ products }) => {
       localStorage.removeItem("carts");
     }
   };
+  /* handle trash */
+  const handleTrash = (id) => {
+    if (window.confirm("Do you want to delete this item?")) {
+      const itemsExceptDeleted = savedItem.filter((item) => item !== id);
+      localStorage.setItem("carts", JSON.stringify(itemsExceptDeleted));
+      setSavedItem(UseStorage());
+    }
+  };
 
   return (
     <>
@@ -61,7 +69,7 @@ const Shop = ({ products }) => {
               ))}
             </div>
             <div className="shop-dashboard">
-              {savedItem.length > 0 ? (
+              {savedItem?.length > 0 ? (
                 <>
                   <h3>Items Summery</h3>
                   <div className="cart-container">
@@ -71,6 +79,7 @@ const Shop = ({ products }) => {
                           key={item.id}
                           item={item}
                           celebrate={celebrate}
+                          handleTrash={handleTrash}
                         />
                       ))
                     ) : (
@@ -105,7 +114,12 @@ const Shop = ({ products }) => {
           </div>
         </div>
       </section>
-      <div className={`error-message ${error ? "active" : " "}`}>{error}</div>
+      <div
+        onClick={() => setError(false)}
+        className={`error-message ${error ? "active" : " "}`}
+      >
+        {error}
+      </div>
     </>
   );
 };

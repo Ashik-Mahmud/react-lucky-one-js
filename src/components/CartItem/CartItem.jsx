@@ -1,8 +1,9 @@
 import React from "react";
 import { BsTrash } from "react-icons/bs";
 import "./CartItem.css";
-const CartItem = ({ item, celebrate }) => {
-  const { imageUrl, name, category, price } = item;
+const CartItem = ({ item, celebrate, handleTrash }) => {
+  const { imageUrl, name, category, price, id } = item;
+
   return (
     <div className="cart-item">
       <img
@@ -20,7 +21,7 @@ const CartItem = ({ item, celebrate }) => {
           <small>{category}</small>
         </div>
       </div>
-      <button>
+      <button onClick={() => handleTrash(id)}>
         <BsTrash />
       </button>
     </div>
