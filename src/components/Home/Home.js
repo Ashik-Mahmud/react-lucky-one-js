@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import Question from '../Question/Question';
 import Header from "./../Header/Header";
 import Shop from "./../Shop/Shop";
 
@@ -17,6 +18,7 @@ const Home = () => {
     <>
      <Header />
      <Shop products={products} />
+     <Question />
     </>
   )
 }

@@ -21,9 +21,17 @@ const CartItem = ({ item, celebrate, handleTrash }) => {
           <small>{category}</small>
         </div>
       </div>
-      <button onClick={() => handleTrash(id)}>
-        <BsTrash />
-      </button>
+      {celebrate ? (
+        <img
+          width={"50"}
+          src="https://thumbs.dreamstime.com/b/best-choice-ecommerce-badge-37638199.jpg"
+          alt="selected"
+        />
+      ) : (
+        <button onClick={() => handleTrash(id)}>
+          <BsTrash />
+        </button>
+      )}
     </div>
   );
 };

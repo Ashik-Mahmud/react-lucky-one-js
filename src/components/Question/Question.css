@@ -1,0 +1,25 @@
+.question {
+  padding: 1rem 0rem;
+}
+.question h1 {
+  text-align: center;
+  margin: 2rem 0rem;
+}
+.question-content {
+  padding: 1rem 0rem;
+  position: relative;
+}
+.question-content details {
+  padding: 1rem;
+  background-color: #f8f8f8;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+.question-content summery {
+  padding: 0.3rem 0rem;
+  font-weight: bold;
+}
+.question-content details p {
+  background-color: #fff;
+  padding: 1rem;
+}
