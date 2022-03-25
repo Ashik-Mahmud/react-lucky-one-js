@@ -1,0 +1,24 @@
+/* shop  */
+
+#shop {
+  padding: 2rem 0rem;
+  position: relative;
+}
+.shop-container {
+  display: grid;
+  grid-template-columns: 5fr 2fr;
+  grid-gap: 2rem;
+  position: relative;
+  align-items: flex-start;
+}
+.shop-container .shop-contents {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 1rem;
+  position: relative;
+}
+#shop .shop-dashboard {
+  background-color: #f7f7f7;
+  padding: 1rem;
+  position: relative;
+}

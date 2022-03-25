@@ -35,7 +35,7 @@ img {
 /* custom classes  */
 
 .container {
-  max-width: min(100% - 2rem, 1250px);
+  max-width: min(100% - 2rem, 1350px);
   margin-inline: auto;
 }
 .colorize {
