@@ -80,3 +80,7 @@
 .error-message.active {
   top: 4%;
 }
+.empty-cart-items {
+  padding: 5rem;
+  text-align: center;
+}
