@@ -4,7 +4,7 @@ This is simple RealState application using react js. If you have a any query abo
 
 ### Live App link
 
-# <>
+# <https://react-real-state.netlify.app/>
 
 ![imageScreenshot](./preview.png)
 
